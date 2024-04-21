@@ -1,0 +1,12 @@
+﻿<!--Arq de projeto do c# onde ficam os metadados em xml -->
+
+<Project Sdk="Microsoft.NET.Sdk">
+
+  <PropertyGroup>
+    <OutputType>Exe</OutputType> <!--saida tipo executavel-->
+    <TargetFramework>net8.0</TargetFramework> <!--dotnet "traçotraço"info para ver versoes instaladas-->
+    <ImplicitUsings>enable</ImplicitUsings>
+    <Nullable>enable</Nullable>
+  </PropertyGroup>
+
+</Project>
