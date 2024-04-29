@@ -1,5 +1,3 @@
-﻿//arquivo de classe c# onde fica a codificação
-//é o ponto de entrada do programa
 // See https://aka.ms/new-console-template for more information
 
 using Fundamentals.Models;
