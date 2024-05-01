@@ -1,6 +1,10 @@
 ﻿
 <Project Sdk="Microsoft.NET.Sdk">
 
+  <ItemGroup>
+    <ProjectReference Include="..\Fundamental.Core\Fundamental.Core.csproj" />
+  </ItemGroup>
+
   <PropertyGroup>
     <OutputType>Exe</OutputType> <!--saida tipo executavel-->
     <TargetFramework>net8.0</TargetFramework> <!--dotnet "traçotraço"info para ver versoes instaladas-->
