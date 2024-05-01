@@ -1,5 +1,4 @@
-﻿<!--Arq de projeto do c# onde ficam os metadados em xml -->
-
+﻿
 <Project Sdk="Microsoft.NET.Sdk">
 
   <PropertyGroup>

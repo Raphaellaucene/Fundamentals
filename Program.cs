@@ -1,13 +1,54 @@
-// See https://aka.ms/new-console-template for more information
+﻿// See https://aka.ms/new-console-template for more information
 
 using Fundamentals.Models;
 
-Calculator calc = new Calculator();
+string options;
+bool showmenu = true;
+
+while(showmenu){
+    Console.Clear();
+    Console.WriteLine("Enter your choice: ");
+    Console.WriteLine("1 - Register Customers");
+    Console.WriteLine("2 - Search Customers");
+    Console.WriteLine("3 - Delete Customers");
+    Console.WriteLine("4 - Exit");
+
+    options = Console.ReadLine();
+
+    switch(options){
+        case "1":
+            Console.WriteLine("Cadastro de cliente");
+            break;
+
+        case "2":
+            Console.WriteLine("Buscar Cliente");
+            break;
+
+        case "3":
+            Console.WriteLine("Apagar Cliente");
+            break;
+
+        case "4":
+            Console.WriteLine("Encerrar");
+            //Environment.Exit(0); //encerra por completo
+            showmenu = false;
+            break;
+
+        default:
+            Console.WriteLine("Opção inválida!");
+            break;
+    }
+}
+
+Console.WriteLine("Program is closed..");
+
+
+//Calculator calc = new Calculator();
 
 //calc.Sum(10, 30);
-calc.Seno(30);
-calc.Coseno(30);
-calc.Tangente(30);
+// calc.Seno(30);
+// calc.Coseno(30);
+// calc.Tangente(30);
 
 // People pessoa1 = new People();
 
