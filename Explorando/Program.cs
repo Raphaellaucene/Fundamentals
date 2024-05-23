@@ -2,24 +2,37 @@
 using System.Reflection.Metadata;
 using Explorando.Models;
 
-try
-{
-    //each line can return in a string
-    string[] lines = File.ReadAllLines("Files/filedRead.txt"); //using class file to read a file
 
-    foreach(string line in lines) {
-        Console.WriteLine(line);
-    }
-}
-catch (Exception ex)
-{
-    Console.WriteLine($"A Generic exception occurred.. {ex.Message}");
-}
+new ExExeption().Method1();
 
 
+//Not Generic exeption
+// try
+// {
+//     //each line can return in a string
+//     string[] lines = File.ReadAllLines("Files/filedRead.txt"); //using class file to read a file
 
-
-
+//     foreach(string line in lines) {
+//         Console.WriteLine(line);
+//     }
+// }
+// catch (FileNotFoundException ex)
+// {
+//     Console.WriteLine($"Occurred an error at read de file.. {ex.Message}");
+// }
+// catch (DirectoryNotFoundException ex)
+// {
+//     Console.WriteLine($"Occurred an error at read de file.. {ex.Message}");
+// }
+// //Generic exeption
+// catch (Exception ex)
+// {
+//     Console.WriteLine($"A Generic exception occurred.. {ex.Message}");
+// }
+// finally
+// {
+//     Console.WriteLine("end of line...");
+// }
 
 
 //structure datetime
