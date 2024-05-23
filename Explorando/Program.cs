@@ -2,6 +2,19 @@
 using System.Reflection.Metadata;
 using Explorando.Models;
 
+try
+{
+    //each line can return in a string
+    string[] lines = File.ReadAllLines("Files/filedRead.txt"); //using class file to read a file
+
+    foreach(string line in lines) {
+        Console.WriteLine(line);
+    }
+}
+catch (Exception ex)
+{
+    Console.WriteLine($"A Generic exception occurred.. {ex.Message}");
+}
 
 
 
