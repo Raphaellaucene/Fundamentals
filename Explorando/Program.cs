@@ -2,22 +2,59 @@
 using System.Reflection.Metadata;
 using Explorando.Models;
 
+//dictionary is a key-value colection using to storage
+//unique values without an specific order
+//It will ensure that your elements are unique based on the key
+
+//passing key and data types
+Dictionary<string, string> states = new Dictionary<string, string>();
+
+states.Add("SP", "São Paulo");
+states.Add("MG", "Minas Gerais");
+states.Add("PR", "Paraná");
+
+//foreach (KeyValuePair <string, string> item in states) //keyValuePair represente the dictionary
+//but you can use var instead keyvaluepair and he recognize the data type
+// foreach (var item in states)
+// {
+//     //representing key = MG and value = Minas Gerais
+//     Console.WriteLine($"Key: {item.Key}, value: {item.Value}");
+// }
+
+// states.Remove("MG"); //removing key (u cannot change the key, just remove)
+
+// states["SP"] = "San Paul"; //update value (always by key)
+
+// string key = "PR";
+// Console.WriteLine($"Checking the element: {key}");
+
+//checking if in states contain key
+// if (states.ContainsKey(key)) {
+//     Console.WriteLine($"Existing value: {key}");
+// }
+// else {
+//     Console.WriteLine($"Value not exist.. There is safe to add the key: {key}");
+// }
+
+//get value
+//Console.WriteLine(states["PR"]);
+
 //Colections - stack
 //collection is LIFO, Last in First Out
-Stack<int> stack = new Stack<int>();
+// Stack<int> stack = new Stack<int>();
 
 //insert object at top of the stack
-stack.Push(32);
-stack.Push(2);
-stack.Push(3);
-stack.Push(5);
+// stack.Push(32);
+// stack.Push(2);
+// stack.Push(3);
+// stack.Push(5);
 
-foreach(int item in stack) {
-    Console.WriteLine(item);
-}
+// foreach(int item in stack) {
+//     Console.WriteLine(item);
+// }
 
 //removing the last element insert
-Console.WriteLine($"Removing the top element: {stack.Pop()}");
+// Console.WriteLine($"Removing the top element: {stack.Pop()}");
 
 //queue integer constructor
 //queue is FIFO
