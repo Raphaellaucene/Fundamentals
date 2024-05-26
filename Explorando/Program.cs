@@ -2,9 +2,33 @@
 using System.Reflection.Metadata;
 using Explorando.Models;
 
+//queue integer constructor
+//queue is FIFO
+// Queue<int> queue = new Queue<int>();
 
-new ExExeption().Method1();
+//fit an object in the end of line
+// queue.Enqueue(2);
+// queue.Enqueue(3);
+// queue.Enqueue(5);
+// queue.Enqueue(90);
 
+// foreach (int item in queue)
+// {
+//     Console.WriteLine(item);
+// }
+
+//always remove the first element
+// Console.WriteLine($"Removendo o elemento: {queue.Dequeue()}");
+
+// foreach (var item in queue)
+// {
+//     Console.WriteLine(item);
+// }
+
+//Colections - stack
+//collection is LIFO, Last in First Out
+
+//new ExExeption().Method1();
 
 //Not Generic exeption
 // try
