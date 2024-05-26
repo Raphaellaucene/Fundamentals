@@ -2,6 +2,23 @@
 using System.Reflection.Metadata;
 using Explorando.Models;
 
+//Colections - stack
+//collection is LIFO, Last in First Out
+Stack<int> stack = new Stack<int>();
+
+//insert object at top of the stack
+stack.Push(32);
+stack.Push(2);
+stack.Push(3);
+stack.Push(5);
+
+foreach(int item in stack) {
+    Console.WriteLine(item);
+}
+
+//removing the last element insert
+Console.WriteLine($"Removing the top element: {stack.Pop()}");
+
 //queue integer constructor
 //queue is FIFO
 // Queue<int> queue = new Queue<int>();
@@ -25,8 +42,6 @@ using Explorando.Models;
 //     Console.WriteLine(item);
 // }
 
-//Colections - stack
-//collection is LIFO, Last in First Out
 
 //new ExExeption().Method1();
 
