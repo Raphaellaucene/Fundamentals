@@ -1,4 +1,4 @@
-# Fundamentals .NET
+# Fundamentals .NET 🚀
 
 - **.NET Framework** is a legacy framework.
   
