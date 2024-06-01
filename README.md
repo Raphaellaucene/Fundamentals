@@ -1,5 +1,7 @@
 # Fundamentals .NET 🚀
 
+## Some Notes 📝
+
 - **.NET Framework** is a legacy framework.
   
 - Starting with **.NET 5**, the platform is cross-platform (formerly known as .NET Core).
