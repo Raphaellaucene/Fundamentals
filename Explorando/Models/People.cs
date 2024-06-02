@@ -18,6 +18,13 @@ namespace Explorando.Models
             LastName = lastName;
         }
 
+        //deconstructor inverting
+        public void Deconstruct(out string name, out string lastName) {
+
+            name = Name;
+            lastName = LastName;
+        }
+
         //create encapsuling fields
         private string _name;
 

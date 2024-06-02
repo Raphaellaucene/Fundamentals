@@ -1,17 +1,71 @@
 ﻿using System.Globalization;
-using System.Reflection.Metadata;
 using Explorando.Models;
+//using System.Reflection.Metadata;
+
+//-- Ternary If --
+
+int number = 15;
+bool isEven = false;
+
+isEven = number % 2 == 0;
+
+//ternary if
+Console.WriteLine($"The number {number} is " + (isEven ? "Even" : "odd"));
+
+//-- Deconstructor --
+// People p1 = new People("Pumita", "Rodrigo");
+
+//split in two parts
+// (string name, string lastName) = p1;
+
+// Console.WriteLine($"{name} {lastName}");
+
+//-- Tuplas --
+
+// ReadFile file = new ReadFile();
+
+//var using for assume automatically the data type
+// var (sucess, linesFiles, totalLines) = file.ReadArq("Files/fileRead.txt");
+
+//Descarted using underscore
+//var (sucess, linesFiles, _) = file.ReadArq("Files/fileRead.txt");
+
+// if (sucess) {
+
+//     Console.WriteLine("Number of lines in teh file:" + totalLines);
+
+//     foreach(string line in linesFiles) {
+//         Console.WriteLine(line);
+//     }
+// } else {
+
+//     Console.WriteLine("It wasnt possible to read the file..");
+// }
+
+//declare data types and your values and rename itens
+// (int Id, string Name, string LastName, decimal Height) tupla = (1, "Leo", "Jardan", 1.90M);
+
+//passing type of data, but we cant rename the itens
+//ValueTuple<int, string, string, decimal> anotherExTupla = (1, "Leo", "Jardan", 1.90M);
+
+//using Create we dont pass the type, it already identifies
+//var anotherExTuplaCreate = Tuple.Create(1, "Leo", "Jardan", 1.80M);
+
+// Console.WriteLine($"ID: {tupla.Item1}");
+// Console.WriteLine($"Hight: {tupla.Item4}");
+
+//-- Dictionary --
 
 //dictionary is a key-value colection using to storage
 //unique values without an specific order
 //It will ensure that your elements are unique based on the key
 
 //passing key and data types
-Dictionary<string, string> states = new Dictionary<string, string>();
+//Dictionary<string, string> states = new Dictionary<string, string>();
 
-states.Add("SP", "São Paulo");
-states.Add("MG", "Minas Gerais");
-states.Add("PR", "Paraná");
+//states.Add("SP", "São Paulo");
+//states.Add("MG", "Minas Gerais");
+//states.Add("PR", "Paraná");
 
 //foreach (KeyValuePair <string, string> item in states) //keyValuePair represente the dictionary
 //but you can use var instead keyvaluepair and he recognize the data type
@@ -79,7 +133,6 @@ states.Add("PR", "Paraná");
 //     Console.WriteLine(item);
 // }
 
-
 //new ExExeption().Method1();
 
 //Not Generic exeption
@@ -133,8 +186,6 @@ states.Add("PR", "Paraná");
 //     Console.WriteLine($"{dateString} is not a valid date..");
 // }
 
-
-
 //set system culture
 // CultureInfo.DefaultThreadCurrentCulture = new CultureInfo("en-US");
 
@@ -156,10 +207,6 @@ states.Add("PR", "Paraná");
 
 // int number = 123456;
 // Console.WriteLine(number.ToString("##-##-##")); //print 12-34-56
-
-
-
-
 
 // People p1 = new People(name: "Leo", lastName: "Batista");
 // // p1.Name = "Leo";
