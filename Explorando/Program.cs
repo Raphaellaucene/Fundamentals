@@ -1,16 +1,45 @@
 ﻿using System.Globalization;
-using Explorando.Models;
+using System.Net.Http.Headers;
+using Models;
 //using System.Reflection.Metadata;
+
+//-- Serialization --
+using Newtonsoft.Json;
+
+//object
+//Sale v1 = new Sale(1, "Office Supplies", 25.00M);
+
+//collection
+List<Sale> saleList = new List<Sale>();
+
+Sale v1 = new Sale(1, "Office Supplies", 30.0M);
+Sale v2 = new Sale(2, "Office 365 E5", 110.0M);
+
+saleList.Add(v1);
+saleList.Add(v2);
+
+//json convert
+//string serialized = JsonConvert.SerializeObject(v1);
+//string serialized = JsonConvert.SerializeObject(v1, Formatting.Indented); //with line break
+string serialized = JsonConvert.SerializeObject(saleList, Formatting.Indented); //serialize collection
+
+Console.WriteLine(serialized);
+
+//create sales json file
+File.WriteAllText("Files/sales.json", serialized);
+
+
+
 
 //-- Ternary If --
 
-int number = 15;
-bool isEven = false;
+//int number = 15;
+//bool isEven = false;
 
-isEven = number % 2 == 0;
+//isEven = number % 2 == 0;
 
 //ternary if
-Console.WriteLine($"The number {number} is " + (isEven ? "Even" : "odd"));
+//Console.WriteLine($"The number {number} is " + (isEven ? "Even" : "odd"));
 
 //-- Deconstructor --
 // People p1 = new People("Pumita", "Rodrigo");

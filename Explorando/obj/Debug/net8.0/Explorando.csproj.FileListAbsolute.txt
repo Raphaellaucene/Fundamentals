@@ -13,3 +13,6 @@ C:\Projects\dotnet\Fundamentals\Explorando\obj\Debug\net8.0\refint\Explorando.dl
 C:\Projects\dotnet\Fundamentals\Explorando\obj\Debug\net8.0\Explorando.pdb
 C:\Projects\dotnet\Fundamentals\Explorando\obj\Debug\net8.0\Explorando.genruntimeconfig.cache
 C:\Projects\dotnet\Fundamentals\Explorando\obj\Debug\net8.0\ref\Explorando.dll
+C:\Projects\dotnet\Fundamentals\Explorando\bin\Debug\net8.0\Newtonsoft.Json.dll
+C:\Projects\dotnet\Fundamentals\Explorando\obj\Debug\net8.0\Explorando.csproj.AssemblyReference.cache
+C:\Projects\dotnet\Fundamentals\Explorando\obj\Debug\net8.0\Explorando.csproj.Up2Date
