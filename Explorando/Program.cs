@@ -9,11 +9,13 @@ using Newtonsoft.Json;
 //object
 //Sale v1 = new Sale(1, "Office Supplies", 25.00M);
 
+DateTime dateNow = DateTime.Now;
+
 //collection
 List<Sale> saleList = new List<Sale>();
 
-Sale v1 = new Sale(1, "Office Supplies", 30.0M);
-Sale v2 = new Sale(2, "Office 365 E5", 110.0M);
+Sale v1 = new Sale(1, "Office Supplies", 30.0M, dateNow);
+Sale v2 = new Sale(2, "Office 365 E5", 110.0M, dateNow);
 
 saleList.Add(v1);
 saleList.Add(v2);
@@ -21,7 +23,8 @@ saleList.Add(v2);
 //json convert
 //string serialized = JsonConvert.SerializeObject(v1);
 //string serialized = JsonConvert.SerializeObject(v1, Formatting.Indented); //with line break
-string serialized = JsonConvert.SerializeObject(saleList, Formatting.Indented); //serialize collection
+//serialize collection in ISO 8601 that standardizes the representation of date between systems
+string serialized = JsonConvert.SerializeObject(saleList, Formatting.Indented);
 
 Console.WriteLine(serialized);
 
