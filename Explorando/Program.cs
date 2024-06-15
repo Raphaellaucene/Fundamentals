@@ -1,37 +1,52 @@
 ﻿using System.Globalization;
 using System.Net.Http.Headers;
 using Models;
+using Newtonsoft.Json;
 //using System.Reflection.Metadata;
 
+// -- Deserialization --
+
+//read file json
+string  fileContent = File.ReadAllText("Files/sales.json");
+
+//sales's collections
+List<Sale> listSale = JsonConvert.DeserializeObject<List<Sale>>(fileContent);
+
+foreach (Sale sale in listSale)
+{
+    Console.WriteLine(
+        $"Id: {sale.Id}, Product: {sale.Product}, " +
+        $"Price: {sale.Price}, Date: {sale.DateSale.ToString("dd/MM/yyy HH:mm")}"
+    );
+}
+
 //-- Serialization --
-using Newtonsoft.Json;
+//using Newtonsoft.Json;
 
 //object
 //Sale v1 = new Sale(1, "Office Supplies", 25.00M);
 
-DateTime dateNow = DateTime.Now;
+// DateTime dateNow = DateTime.Now;
 
 //collection
-List<Sale> saleList = new List<Sale>();
+// List<Sale> saleList = new List<Sale>();
 
-Sale v1 = new Sale(1, "Office Supplies", 30.0M, dateNow);
-Sale v2 = new Sale(2, "Office 365 E5", 110.0M, dateNow);
+// Sale v1 = new Sale(1, "Office Supplies", 30.0M, dateNow);
+// Sale v2 = new Sale(2, "Office 365 E5", 110.0M, dateNow);
 
-saleList.Add(v1);
-saleList.Add(v2);
+// saleList.Add(v1);
+// saleList.Add(v2);
 
 //json convert
 //string serialized = JsonConvert.SerializeObject(v1);
 //string serialized = JsonConvert.SerializeObject(v1, Formatting.Indented); //with line break
 //serialize collection in ISO 8601 that standardizes the representation of date between systems
-string serialized = JsonConvert.SerializeObject(saleList, Formatting.Indented);
+// string serialized = JsonConvert.SerializeObject(saleList, Formatting.Indented);
 
-Console.WriteLine(serialized);
+// Console.WriteLine(serialized);
 
 //create sales json file
-File.WriteAllText("Files/sales.json", serialized);
-
-
+// File.WriteAllText("Files/sales.json", serialized);
 
 
 //-- Ternary If --
